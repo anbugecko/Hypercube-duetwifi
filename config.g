@@ -62,7 +62,7 @@ M106 P0 S0                            		; Filament cooler: Must do, or will go f
 
 ; Firmware Retraction & Pressure Advance -----------------
 ;M572 D0 S0.1                       		; Pressure Advance, acts like 'coast' in Simplify 3D.
-M207 S9 R-.15 F3600 T360000 Z0.075            	; Firmware Retraction : Positive S retracts, negative R unretracts (possitive R extra-extrudes),	
+M207 S9 R-.15 F3600 T3600 Z0.075            	; Firmware Retraction : Positive S retracts, negative R unretracts (possitive R extra-extrudes),	
 						; F retract speed, T unretract speed, Z zlift - Slicer must insert G10 & G11
 
      	
