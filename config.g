@@ -10,7 +10,7 @@ M208 X298 Y310 Z400 S0 				; Set axis maxima
 M563 P1 D0 H1 					; Define tool 0
 
 ; Network ----------------------------
-M551 marius87      + 1              		 ; marius87
+M551 ******      + 1              		; wifi pass
 M540 P0xBE:0xEF:0xDE:0xAD:0xFE:0xED 		; MAC Address - If you have more than one Duet on your network, they must all have different MAC addresses, so change the last digits
 M552 S1           				; Enable WiFi
 
@@ -65,11 +65,11 @@ M106 P0 H-1                           		; Filament cooler: Must do H-1, or it'll
 M106 P0 S0                            		; Filament cooler: Must do, or will go full blast on start :S
 
 ; Firmware Retraction & Pressure Advance -----------------
-M572 D0 S1                       ; Pressure Advance, acts like 'coast' in Simplify 3D.
+M572 D0 S0.1                       ; Pressure Advance, acts like 'coast' in Simplify 3D.
 M207 S5.5 R-.15 F5400 T5400 Z0.075            	; Firmware Retraction : Positive S retracts, negative R unretracts (possitive R extra-extrudes),	
 						; F retract speed, T unretract speed, Z zlift - Slicer must insert G10 & G11
 
-;mal
+;template
 ;M572 D0 S0.05                       
 ;M207 S5.5 R-.1 F5400 T5400 Z0.075            	
 
