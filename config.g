@@ -35,16 +35,14 @@ M569 P3 S0 					; E1 - Drive 3 goes backward - Bondtech BMG
 
 
 ; Accleration, jerk, speeds ----------------------------
-M201 X900 Y900 Z60 E1200            ; Maximum accelerations (mm/s^2) 
-M566 X600 Y600 Z60 E600             ; Maximum jerk in mm/min 
-M203 12000 12000 Z1200 E2500        ; Maximum travel speeds in mm/min
+M201 X900 Y900 Z60 E1200            		; Maximum accelerations (mm/s^2) 
+M566 X600 Y600 Z60 E600             		; Maximum jerk in mm/min 
+M203 12000 12000 Z1200 E2500       		; Maximum travel speeds in mm/min
 
 ; Stepper Microstepping ---------------------------------------
-M92 X80 Y80 Z400		    ; Set XYZ axis steps/mm, 1/16 microstepping. 
-M92 E415:415                            ; Set extruder steps per mm, 1/16 microstepping, Bondtech BMG, 3:1 gear ratio, 415 E-step at 1/16th
-
-
-; Stepper Microstepping ---------------------------------------
+M92 X80 Y80 Z400		    		; Set XYZ axis steps/mm, 1/16 microstepping. 
+M92 E415:415                            	; Set extruder steps per mm, 1/16 microstepping, Bondtech BMG, 3:1 gear ratio, 415 E-step at 1/16th
+M350 X128 Y128 Z128
 M906 X1000 Y1000 Z800 E800 I30 			; Set motor currents (mA) and motor idle factor in per cent
 M84 S30 					; Set idle timeout
 
@@ -63,7 +61,7 @@ M106 P0 H-1                           		; Filament cooler: Must do H-1, or it'll
 M106 P0 S0                            		; Filament cooler: Must do, or will go full blast on start :S
 
 ; Firmware Retraction & Pressure Advance -----------------
-M572 D0 S0.1                       ; Pressure Advance, acts like 'coast' in Simplify 3D.
+M572 D0 S0.1                       		; Pressure Advance, acts like 'coast' in Simplify 3D.
 M207 S5.5 R-.15 F5400 T5400 Z0.075            	; Firmware Retraction : Positive S retracts, negative R unretracts (possitive R extra-extrudes),	
 						; F retract speed, T unretract speed, Z zlift - Slicer must insert G10 & G11
 
