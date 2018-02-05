@@ -35,8 +35,8 @@ M569 P3 S0 					; E1 - Drive 3 goes backward - Bondtech BMG
 
 
 ; Accleration, jerk, speeds ----------------------------
-M201 X900 Y900 Z60 E1200            		; Maximum accelerations (mm/s^2) 
-M566 X600 Y600 Z60 E600             		; Maximum jerk in mm/min 
+M201 X1800 Y1800 Z60 E1800            		; Maximum accelerations (mm/s^2) 
+M566 X300 Y300 Z60 E600             		; Maximum jerk in mm/min 
 M203 X12000 Y12000 Z1200 E3600       		; Maximum travel speeds in mm/min
 
 ; Stepper Microstepping ---------------------------------------
@@ -62,7 +62,7 @@ M106 P0 S0                            		; Filament cooler: Must do, or will go f
 
 ; Firmware Retraction & Pressure Advance -----------------
 ;M572 D0 S0.1                       		; Pressure Advance, acts like 'coast' in Simplify 3D.
-M207 S9 R-.15 F3600 T3600 Z0.075            	; Firmware Retraction : Positive S retracts, negative R unretracts (possitive R extra-extrudes),	
+M207 S6.3 R0 F3600 T3600 Z0.075            	; Firmware Retraction : Positive S retracts, negative R unretracts (possitive R extra-extrudes),	
 						; F retract speed, T unretract speed, Z zlift - Slicer must insert G10 & G11
 
      	
