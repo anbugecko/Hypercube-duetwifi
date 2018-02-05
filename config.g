@@ -45,8 +45,6 @@ M92 E415                            ; Set extruder steps per mm, 1/16 microstepp
 
 
 ; Stepper Microstepping ---------------------------------------
-;M350 X256 Y256 Z256 E256:256 			; set microstepping
-;M92 X1280 Y1280 Z6640 E6640         		; set axis steps/mm @256 microstepping
 M906 X1000 Y1000 Z800 E800 I30 			; Set motor currents (mA) and motor idle factor in per cent
 M84 S30 					; Set idle timeout
 
