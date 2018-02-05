@@ -41,7 +41,7 @@ M203 12000 12000 Z1200 E2500        ; Maximum travel speeds in mm/min
 
 ; Stepper Microstepping ---------------------------------------
 M92 X80 Y80 Z400		    ; Set XYZ axis steps/mm, 1/16 microstepping. 
-M92 E415                            ; Set extruder steps per mm, 1/16 microstepping, Bondtech BMG, 3:1 gear ratio, 415 E-step at 1/16th
+M92 E415:415                            ; Set extruder steps per mm, 1/16 microstepping, Bondtech BMG, 3:1 gear ratio, 415 E-step at 1/16th
 
 
 ; Stepper Microstepping ---------------------------------------
