@@ -35,8 +35,8 @@ M569 P3 S0 					; E1 - Drive 3 goes backward - Bondtech BMG
 
 
 ; Accleration, jerk, speeds ----------------------------
-M201 X900 Y900 Z60 E1200            		; Maximum accelerations (mm/s^2) 
-M566 X600 Y600 Z60 E600             		; Maximum jerk in mm/min 
+M201 X1800 Y1800 Z60 E1800            		; Maximum accelerations (mm/s^2) 
+M566 X300 Y300 Z60 E600             		; Maximum jerk in mm/min 
 M203 X12000 Y12000 Z1200 E3600       		; Maximum travel speeds in mm/min
 
 ; Stepper Microstepping ---------------------------------------
