@@ -1,6 +1,0 @@
-G91
-G1 Z10 S2 			; move bed down
-G90
-G28 XY
-G1 X10 Y5 F3000
-G28 Z

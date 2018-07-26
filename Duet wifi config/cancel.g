@@ -4,4 +4,6 @@ M106 S0
 G91
 G1 Z10 			; move bed down
 G90
-G28 X Y
+G28 X
+G28 Y
+M84
